@@ -1,0 +1,8 @@
+version: "3"
+services:
+  python_app:
+    image: scikit_a6180
+    volumes:
+      - .:/usr/src/myapp 
+    working_dir: '/usr/src/myapp/'
+    command: python3 sample_iris.py
